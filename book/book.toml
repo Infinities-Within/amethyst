@@ -8,4 +8,9 @@ preferred-dark-theme = "coal"
 additional-css = ["style/book.css"]
 additional-js = ["style/book.js"]
 
-#[output.linkcheck]
+[output.linkcheck]
+optional = true
+follow-web-links = true
+
+[output.linkcheck.http-headers]
+   'crates\.io' = ["Accept: text/html"]
